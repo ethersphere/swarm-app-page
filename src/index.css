@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "iA Writer Quattro";
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #303030;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "iA Writer Quattro";
+  }
+
+  h2 {
+    @apply text-sm;
+    @apply uppercase;
+  }
+}
+
+.line {
+  @apply w-full;
+  @apply h-px;
+  background: black;
+}
+
+.features {
+  @apply grid;
+  @apply grid-cols-3;
+  @apply gap-8;
+  @apply mt-16;
+
+  > div {
+    h3 {
+      @apply text-lg;
+      @apply font-semibold;
+      @apply mt-3.5;
+    }
+
+    p {
+      @apply mt-3.5;
+      @apply text-sm;
+    }
+  }
+}
+
+footer {
+  @apply text-white;
+
+  .links {
+    @apply grid;
+    @apply grid-cols-3;
+    @apply gap-8;
+    @apply mt-16;
+    letter-spacing: 1px;
+
+    h5 {
+      @apply uppercase;
+      @apply mb-1.5;
+      color: #787878;
+    }
+
+    a {
+      @apply text-sm;
+      @apply mt-1.5;
+      @apply inline-block;
+      @apply w-full;
+    }
+  }
+}
