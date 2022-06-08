@@ -9,7 +9,7 @@ const Placeholder = ({ height }: { height: number }) => (
     style={{
       width: "100%",
       height: `${height}px`,
-      background: "lightgrey",
+      background: "#f5f5f5",
     }}
   />
 );
@@ -48,8 +48,10 @@ export const App = () => {
               applications and your web browser can access data direct from the
               swarm.
             </p>
-            <button>Download</button>
-            <button>GitHub Page</button>
+            <div class="mt-8">
+              <button class="primary">Download</button>
+              <button class="secondary ml-4">GitHub Page</button>
+            </div>
           </div>
         </section>
         <div class="line mt-32" />
@@ -86,16 +88,16 @@ export const App = () => {
         <div class="line mt-32" />
         <section class="my-32 text-center">
           <h1>Install Swarm now!</h1>
-          <p class="mt-8">
+          <p class="mt-8 text-2xl">
             Donec feugiat eros mollis, ullamcorper nulla sed, eleifend mi.
           </p>
-          <button class="mt-8">Download the app</button>
+          <button class="primary mt-8">Download the app</button>
         </section>
       </Content>
       <footer class="bg-black py-16 text-center">
         <Content>
           <img src={logoNegative} class="m-auto" />
-          <p class="mt-4">
+          <p class="mt-4 text-lg">
             Storage, hosting and messaging for the decentralised web.
           </p>
           <div class="links">

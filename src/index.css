@@ -8,6 +8,7 @@
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    font-weight: 450;
     line-height: normal;
     letter-spacing: normal;
     color: #303030;
@@ -74,4 +75,21 @@ footer {
       @apply w-full;
     }
   }
+}
+
+button {
+  @apply p-4;
+  @apply text-sm;
+  @apply uppercase;
+  letter-spacing: 1px;
+}
+
+button.secondary {
+  border: solid 1px #000;
+  color: black;
+}
+
+button.primary {
+  background: black;
+  color: white;
 }
