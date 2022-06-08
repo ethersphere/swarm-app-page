@@ -15,47 +15,49 @@ const Placeholder = ({ height }: { height: number }) => (
 );
 
 const Content = ({ children }: { children: ComponentChildren }) => (
-  <div class="max-w-3xl m-auto">{children}</div>
+  <div class="max-w-3xl m-auto px-8 md:px-16">{children}</div>
 );
 
 export const App = () => {
   return (
     <>
       <Content>
-        <nav class="mt-16">
+        <nav class="mt-8 md:mt-16">
           <img src={logo} class="m-auto" />
         </nav>
-        <header class="text-center mt-32">
+        <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl">
             Swarm Desktop offers an easy-to-use experience, giving everyone
             truly decentralised access to the Swarm network.
           </p>
         </header>
-        <section class="mt-16 grid grid-cols-2 gap-8">
+        <section class="mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-8">
           <Placeholder height={430} />
-          <div>
+          <div class="mt-8 md:mt-0">
             <p class="text-lg">
               Get the best of Swarm by running an easy to install Bee light-node
               on your desktop, laptop or spare hardware to give you direct p2p
               access to the network, without the need to trust centralised
               gateways.
             </p>
-            <p class="text-sm mt-8">
+            <p class="text-sm mt-4 md:mt-8">
               Easily upload content and manage your node's postage stamps from
               our beautiful visual interface. Keep a lightweight Swarm node
               running in the background on your computer so that other
               applications and your web browser can access data direct from the
               swarm.
             </p>
-            <div class="mt-8">
-              <button class="primary">Download</button>
-              <button class="secondary ml-4">GitHub Page</button>
+            <div class="mt-4 md:mt-8">
+              <button class="primary w-full md:w-auto">Download</button>
+              <button class="secondary mt-4 md:mt-0 md:ml-4 w-full md:w-auto">
+                GitHub Page
+              </button>
             </div>
           </div>
         </section>
-        <div class="line mt-32" />
-        <section class="mt-16">
+        <div class="line mt-16 md:mt-32" />
+        <section class="mt-8 md:mt-16">
           <h2 class="text-center">Why Swarm Desktop</h2>
           <div class="features">
             <div>
@@ -85,16 +87,18 @@ export const App = () => {
             </div>
           </div>
         </section>
-        <div class="line mt-32" />
-        <section class="my-32 text-center">
+        <div class="line mt-16 md:mt-32" />
+        <section class="my-16 md:my-32 text-center">
           <h1>Install Swarm now!</h1>
           <p class="mt-8 text-2xl">
             Donec feugiat eros mollis, ullamcorper nulla sed, eleifend mi.
           </p>
-          <button class="primary mt-8">Download the app</button>
+          <button class="primary mt-8 w-full md:w-auto">
+            Download the app
+          </button>
         </section>
       </Content>
-      <footer class="bg-black py-16 text-center">
+      <footer class="bg-black py-8 md:py-16 text-center">
         <Content>
           <img src={logoNegative} class="m-auto" />
           <p class="mt-4 text-lg">
@@ -129,18 +133,18 @@ export const App = () => {
               <a href="#">FAQs</a>
             </div>
           </div>
-          <div class="cta p-16 my-16">
+          <div class="cta px-4 md:px-8 py-8 md:p-16 my-8 md:my-16">
             <p class="text-2xl">Keep in touch!</p>
             <p class="text-lg pt-2">Receive news and updates to your email.</p>
-            <div class="pt-8 flex gap-4">
+            <div class="pt-8 md:flex md:gap-4">
               <input
-                class="grow px-3 text-lg"
+                class="md:grow px-3 text-lg w-full md:w-auto p-3.5"
                 placeholder="Add your email here…"
                 style={{ color: "#b6b6b6" }}
               />
-              <button class="negative">Subscribe</button>
+              <button class="negative mt-2 md:mt-0">Subscribe</button>
             </div>
-            <p class="pt-8 text-sm" style={{ color: "#787878" }}>
+            <p class="pt-4 md:pt-8 text-sm" style={{ color: "#787878" }}>
               By clicking on Subscribe you consent to usage of your given e-mail
               address for receiving communication and news about the Swarm
               project. Data will be controlled and processed by Swarm
@@ -148,11 +152,11 @@ export const App = () => {
             </p>
           </div>
           <div
-            class="flex justify-between text-sm"
+            class="flex flex-col-reverse md:flex-row md:justify-between text-sm"
             style={{ color: "#6a6a6a" }}
           >
-            <p>Swarm Foundation, 2022</p>
-            <p>Peace, Love, Unity &amp; Respect</p>
+            <p class="mt-2 md:mt-0">Swarm Foundation, 2022</p>
+            <p class="italic">Peace, Love, Unity &amp; Respect</p>
           </div>
         </Content>
       </footer>

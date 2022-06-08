@@ -33,21 +33,27 @@
 }
 
 .features {
-  @apply grid;
-  @apply grid-cols-3;
-  @apply gap-8;
-  @apply mt-16;
+  @apply mt-8;
+
+  @apply md:grid;
+  @apply md:grid-cols-3;
+  @apply md:gap-8;
+  @apply md:mt-16;
 
   > div {
+    @apply mt-8;
+
     h3 {
       @apply text-lg;
       @apply font-semibold;
-      @apply mt-3.5;
+      @apply mt-4;
     }
 
     p {
-      @apply mt-3.5;
+      @apply mt-2;
       @apply text-sm;
+
+      @apply md:mt-3.5;
     }
   }
 }
@@ -56,21 +62,25 @@ footer {
   @apply text-white;
 
   .links {
-    @apply grid;
-    @apply grid-cols-3;
-    @apply gap-8;
-    @apply mt-16;
+    @apply md:grid;
+    @apply md:grid-cols-3;
+    @apply md:gap-8;
+    @apply md:mt-16;
     letter-spacing: 1px;
 
     h5 {
+      @apply mt-8;
       @apply uppercase;
-      @apply mb-1.5;
+      @apply mb-4;
+
+      @apply md:mt-0;
+
       color: #787878;
     }
 
     a {
       @apply text-sm;
-      @apply mt-1.5;
+      @apply mt-2;
       @apply inline-block;
       @apply w-full;
     }
@@ -101,5 +111,8 @@ button.primary {
   button {
     color: white;
     border: 1px solid white;
+
+    @apply w-full;
+    @apply md:w-auto;
   }
 }
