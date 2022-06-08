@@ -129,6 +129,31 @@ export const App = () => {
               <a href="#">FAQs</a>
             </div>
           </div>
+          <div class="cta p-16 my-16">
+            <p class="text-2xl">Keep in touch!</p>
+            <p class="text-lg pt-2">Receive news and updates to your email.</p>
+            <div class="pt-8 flex gap-4">
+              <input
+                class="grow px-3 text-lg"
+                placeholder="Add your email here…"
+                style={{ color: "#b6b6b6" }}
+              />
+              <button class="negative">Subscribe</button>
+            </div>
+            <p class="pt-8 text-sm" style={{ color: "#787878" }}>
+              By clicking on Subscribe you consent to usage of your given e-mail
+              address for receiving communication and news about the Swarm
+              project. Data will be controlled and processed by Swarm
+              Foundation.
+            </p>
+          </div>
+          <div
+            class="flex justify-between text-sm"
+            style={{ color: "#6a6a6a" }}
+          >
+            <p>Swarm Foundation, 2022</p>
+            <p>Peace, Love, Unity &amp; Respect</p>
+          </div>
         </Content>
       </footer>
     </>

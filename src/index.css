@@ -93,3 +93,13 @@ button.primary {
   background: black;
   color: white;
 }
+
+.cta {
+  @apply w-full;
+  background: #202020;
+
+  button {
+    color: white;
+    border: 1px solid white;
+  }
+}
