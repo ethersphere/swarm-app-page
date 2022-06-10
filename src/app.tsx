@@ -15,7 +15,7 @@ const Placeholder = ({ height }: { height: number }) => (
 );
 
 const Content = ({ children }: { children: ComponentChildren }) => (
-  <div class="max-w-3xl m-auto px-8 md:px-16">{children}</div>
+  <div class="max-w-screen-2xl m-auto px-8 md:px-16">{children}</div>
 );
 
 export const App = () => {
@@ -27,7 +27,7 @@ export const App = () => {
         </nav>
         <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
-          <p class="mt-8 text-2xl">
+          <p class="mt-8 text-2xl md:text-4xl">
             Swarm Desktop offers an easy-to-use experience, giving everyone
             truly decentralised access to the Swarm network.
           </p>
@@ -35,13 +35,13 @@ export const App = () => {
         <section class="mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-8">
           <Placeholder height={430} />
           <div class="mt-8 md:mt-0">
-            <p class="text-lg">
+            <p class="text-xl md:text-2xl">
               Get the best of Swarm by running an easy to install Bee light-node
               on your desktop, laptop or spare hardware to give you direct p2p
               access to the network, without the need to trust centralised
               gateways.
             </p>
-            <p class="text-sm mt-4 md:mt-8">
+            <p class="text-lg mt-4 md:mt-8">
               Easily upload content and manage your node's postage stamps from
               our beautiful visual interface. Keep a lightweight Swarm node
               running in the background on your computer so that other
@@ -90,7 +90,7 @@ export const App = () => {
         <div class="line mt-16 md:mt-32" />
         <section class="my-16 md:my-32 text-center">
           <h1>Install Swarm now!</h1>
-          <p class="mt-8 text-2xl">
+          <p class="mt-8 text-2xl md:text-4xl">
             Donec feugiat eros mollis, ullamcorper nulla sed, eleifend mi.
           </p>
           <button class="primary mt-8 w-full md:w-auto">
@@ -101,7 +101,7 @@ export const App = () => {
       <footer class="bg-black py-8 md:py-16 text-center">
         <Content>
           <img src={logoNegative} class="m-auto" />
-          <p class="mt-4 text-lg">
+          <p class="mt-4 text-2xl">
             Storage, hosting and messaging for the decentralised web.
           </p>
           <div class="links">
@@ -134,17 +134,19 @@ export const App = () => {
             </div>
           </div>
           <div class="cta px-4 md:px-8 py-8 md:p-16 my-8 md:my-16">
-            <p class="text-2xl">Keep in touch!</p>
-            <p class="text-lg pt-2">Receive news and updates to your email.</p>
+            <p class="text-3xl md:text-4xl">Keep in touch!</p>
+            <p class="text-xl md:text-2xl pt-2">
+              Receive news and updates to your email.
+            </p>
             <div class="pt-8 md:flex md:gap-4">
               <input
-                class="md:grow px-3 text-lg w-full md:w-auto p-3.5"
+                class="md:grow px-3 text-2xl w-full md:w-auto p-3.5"
                 placeholder="Add your email here…"
                 style={{ color: "#b6b6b6" }}
               />
               <button class="negative mt-2 md:mt-0">Subscribe</button>
             </div>
-            <p class="pt-4 md:pt-8 text-sm" style={{ color: "#787878" }}>
+            <p class="pt-4 md:pt-8 text-lg" style={{ color: "#787878" }}>
               By clicking on Subscribe you consent to usage of your given e-mail
               address for receiving communication and news about the Swarm
               project. Data will be controlled and processed by Swarm
@@ -152,7 +154,7 @@ export const App = () => {
             </p>
           </div>
           <div
-            class="flex flex-col-reverse md:flex-row md:justify-between text-sm"
+            class="flex flex-col-reverse md:flex-row md:justify-between text-lg"
             style={{ color: "#6a6a6a" }}
           >
             <p class="mt-2 md:mt-0">Swarm Foundation, 2022</p>
