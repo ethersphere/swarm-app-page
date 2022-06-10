@@ -65,8 +65,8 @@ export const App = () => {
               <h3>The easiest way to Swarm</h3>
               <p>
                 With our desktop application, you can now also easily access
-                content on the Swarm network,without having to understand a
-                complex set up provess.
+                content on the Swarm network, without having to understand a
+                complex set up process.
               </p>
             </div>
             <div>
@@ -85,13 +85,37 @@ export const App = () => {
                 manage stamps that keep your content alive in the swarm network.
               </p>
             </div>
+            <div>
+              <Placeholder height={200} />
+              <h3>Easily host websites</h3>
+              <p>
+                Host your website with only a few clicks and make it unstoppable
+                and censorship resistant.
+              </p>
+            </div>
+            <div>
+              <Placeholder height={200} />
+              <h3>Intuitively explore Swarm</h3>
+              <p>
+                Forget about the terminal and developer oriented tools and enjoy
+                the familiarity of Web 2.
+              </p>
+            </div>
+            <div>
+              <Placeholder height={200} />
+              <h3>Discover a new way to store your files</h3>
+              <p>
+                Get a taste of the software of the future. Store your files in a
+                decentralized fashion.
+              </p>
+            </div>
           </div>
         </section>
         <div class="line mt-16 md:mt-32" />
         <section class="my-16 md:my-32 text-center">
           <h1>Install Swarm now!</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Donec feugiat eros mollis, ullamcorper nulla sed, eleifend mi.
+            Tune into the network with only a few clicks.
           </p>
           <button class="primary mt-8 w-full md:w-auto">
             Download the app
