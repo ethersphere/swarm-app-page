@@ -37,7 +37,7 @@ export const App = () => {
           <div class="mt-8 md:mt-0">
             <p class="text-xl md:text-2xl">
               Get the best out of Swarm by running a lightweight Swarm node on
-              directly on your own computer, giving you direct peer-to-peer
+              on your own computer, giving you direct peer-to-peer
               access to the network: no need to trust and rely on centralised
               gateways.
             </p>
@@ -45,7 +45,7 @@ export const App = () => {
               Bee Desktop starts a lightweight Swarm node service that runs in
               the background on your computer. Use your favourite web browser to
               manage your node, browse websites and upload and download data
-              direct from other peers in the Swarm network.
+              directly from other peers in the Swarm network.
             </p>
             <div class="mt-4 md:mt-8">
               <button class="primary w-full md:w-auto">Download</button>
