@@ -28,24 +28,24 @@ export const App = () => {
         <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Swarm Desktop offers an easy-to-use experience, enabling everyone to get
-            completely decentralised access to the Swarm network.
+            Swarm Desktop offers an easy-to-use experience, enabling everyone to
+            get completely decentralised access to the Swarm network.
           </p>
         </header>
         <section class="mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-8">
           <Placeholder height={430} />
           <div class="mt-8 md:mt-0">
             <p class="text-xl md:text-2xl">
-              Get the best out of Swarm by running a lightweight Swarm node
-              on directly on your own computer, giving you direct peer-to-peer
+              Get the best out of Swarm by running a lightweight Swarm node on
+              directly on your own computer, giving you direct peer-to-peer
               access to the network: no need to trust and rely on centralised
               gateways.
             </p>
             <p class="text-lg mt-4 md:mt-8">
-              Bee Desktop starts a lightweight Swarm node service that runs in 
-              the background on your computer. Use your favourite web browser to 
-              manage your node, browse websites and upload and download data direct
-              from other peers in the Swarm network.
+              Bee Desktop starts a lightweight Swarm node service that runs in
+              the background on your computer. Use your favourite web browser to
+              manage your node, browse websites and upload and download data
+              direct from other peers in the Swarm network.
             </p>
             <div class="mt-4 md:mt-8">
               <button class="primary w-full md:w-auto">Download</button>
@@ -63,7 +63,9 @@ export const App = () => {
               <Placeholder height={200} />
               <h3>Join Swarm with just 1 click</h3>
               <p>
-                Joining the Swarm network has never been easier, simply download and install Swarm Desktop to get a lightweight Bee node running on your computer.
+                Joining the Swarm network has never been easier, simply download
+                and install Swarm Desktop to get a lightweight Bee node running
+                on your computer.
               </p>
             </div>
             <div>
@@ -78,30 +80,35 @@ export const App = () => {
               <Placeholder height={200} />
               <h3>Manage your data's persistence</h3>
               <p>
-                Swarm for Desktop makes it easy to buy and
-                manage the stamps that will keep your content alive in the swarm network.
+                Swarm for Desktop makes it easy to buy and manage the stamps
+                that will keep your content alive in the swarm network.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
               <h3>Easily host websites</h3>
               <p>
-                Upload your website to the unstoppable and censorship resistant Swarm network. 
-                Easily share it with preview URL's, or link it with your ENS name for easy discoverability.
+                Upload your website to the unstoppable and censorship resistant
+                Swarm network. Easily share it with preview URL's, or link it
+                with your ENS name for easy discoverability.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
               <h3>Intuitively explore Swarm</h3>
               <p>
-                Swarm Desktop makes it simple for you to try and out and explore the functionality of the Swarm network. Easily your Swarm light-node's status, settings and wallet.
+                Swarm Desktop makes it simple for you to try and out and explore
+                the functionality of the Swarm network. Easily your Swarm
+                light-node's status, settings and wallet.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
               <h3>Upload and forget</h3>
               <p>
-                No need to keep your node running. Once you have uploaded your content to Swarm, it will be automatically be kept alive by a worldwide network of peers.
+                No need to keep your node running. Once you have uploaded your
+                content to Swarm, it will be automatically be kept alive by a
+                worldwide network of peers.
               </p>
             </div>
           </div>
