@@ -28,25 +28,24 @@ export const App = () => {
         <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Swarm Desktop offers an easy-to-use experience, giving everyone
-            truly decentralised access to the Swarm network.
+            Swarm Desktop offers an easy-to-use experience, enabling everyone to
+            get completely decentralised access to the Swarm network.
           </p>
         </header>
         <section class="mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-8">
           <Placeholder height={430} />
           <div class="mt-8 md:mt-0">
             <p class="text-xl md:text-2xl">
-              Get the best of Swarm by running an easy to install Bee light-node
-              on your desktop, laptop or spare hardware to give you direct p2p
-              access to the network, without the need to trust centralised
+              Get the best out of Swarm by running a lightweight Swarm node on
+              on your own computer, giving you direct peer-to-peer
+              access to the network: no need to trust and rely on centralised
               gateways.
             </p>
             <p class="text-lg mt-4 md:mt-8">
-              Easily upload content and manage your node's postage stamps from
-              our beautiful visual interface. Keep a lightweight Swarm node
-              running in the background on your computer so that other
-              applications and your web browser can access data direct from the
-              swarm.
+              Bee Desktop starts a lightweight Swarm node service that runs in
+              the background on your computer. Use your favourite web browser to
+              manage your node, browse websites and upload and download data
+              directly from other peers in the Swarm network.
             </p>
             <div class="mt-4 md:mt-8">
               <button class="primary w-full md:w-auto">Download</button>
@@ -58,15 +57,15 @@ export const App = () => {
         </section>
         <div class="line mt-16 md:mt-32" />
         <section class="mt-8 md:mt-16">
-          <h2 class="text-center">Why Swarm Desktop</h2>
+          <h2 class="text-center">Why Swarm Desktop?</h2>
           <div class="features">
             <div>
               <Placeholder height={200} />
-              <h3>The easiest way to Swarm</h3>
+              <h3>Join Swarm with just 1 click</h3>
               <p>
-                With our desktop application, you can now also easily access
-                content on the Swarm network, without having to understand a
-                complex set up process.
+                Joining the Swarm network has never been easier, simply download
+                and install Swarm Desktop to get a lightweight Bee node running
+                on your computer.
               </p>
             </div>
             <div>
@@ -79,34 +78,37 @@ export const App = () => {
             </div>
             <div>
               <Placeholder height={200} />
-              <h3>Manage your own node</h3>
+              <h3>Manage your data's persistence</h3>
               <p>
-                Swarm for Desktop allows you to easily and securely buy and
-                manage stamps that keep your content alive in the swarm network.
+                Swarm for Desktop makes it easy to buy and manage the stamps
+                that will keep your content alive in the swarm network.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
               <h3>Easily host websites</h3>
               <p>
-                Host your website with only a few clicks and make it unstoppable
-                and censorship resistant.
+                Upload your website to the unstoppable and censorship resistant
+                Swarm network. Easily share it with preview URL's, or link it
+                with your ENS name for easy discoverability.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
               <h3>Intuitively explore Swarm</h3>
               <p>
-                Forget about the terminal and developer oriented tools and enjoy
-                the familiarity of Web 2.
+                Swarm Desktop makes it simple for you to try and out and explore
+                the functionality of the Swarm network. Easily your Swarm
+                light-node's status, settings and wallet.
               </p>
             </div>
             <div>
               <Placeholder height={200} />
-              <h3>Discover a new way to store your files</h3>
+              <h3>Upload and forget</h3>
               <p>
-                Get a taste of the software of the future. Store your files in a
-                decentralized fashion.
+                No need to keep your node running. Once you have uploaded your
+                content to Swarm, it will be automatically be kept alive by a
+                worldwide network of peers.
               </p>
             </div>
           </div>
@@ -115,7 +117,7 @@ export const App = () => {
         <section class="my-16 md:my-32 text-center">
           <h1>Install Swarm now!</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Tune into the network with only a few clicks.
+            Get up and running in just a few clicks.
           </p>
           <button class="primary mt-8 w-full md:w-auto">
             Download the app
