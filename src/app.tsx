@@ -1,3 +1,6 @@
+// Hooks
+import { useMauticSdk } from "./hooks/use-mautic-sdk";
+
 // Assets
 import logo from "./assets/logo.svg";
 import logoNegative from "./assets/logo-negative.svg";
@@ -26,7 +29,74 @@ const Content = ({ children }: { children: ComponentChildren }) => (
   <div class="max-w-screen-2xl m-auto px-8 md:px-16">{children}</div>
 );
 
+const Newsletter = () => (
+  <form
+    class="pt-8 md:flex md:gap-4"
+    method="post"
+    action="https://mautic.int.ethswarm.org/form/submit?formId=4"
+    encType="multipart/form-data"
+    id="mauticform_websitenewslettersubscription"
+    data-mautic-form="websitenewslettersubscription"
+  >
+    <input
+      class="md:grow px-3 text-2xl w-full md:w-auto p-3.5"
+      placeholder="Add your email here…"
+      style={{ color: "#b6b6b6" }}
+      name="mauticform[email_address]"
+      id="mauticform_input_websitenewslettersubscription_email_address"
+      type="email"
+    />
+    <button
+      class="negative mt-2 md:mt-0"
+      type="submit"
+      name="mauticform[submit]"
+      id="mauticform_input_websitenewslettersubscription_submit"
+    >
+      Subscribe
+    </button>
+
+    {/* Success / error */}
+    <div class="mt-4">
+      <div
+        class="text-red-400"
+        id="mauticform_websitenewslettersubscription_error"
+      />
+      <div id="mauticform_websitenewslettersubscription_message" />
+    </div>
+
+    {/* Form metadata */}
+    <input
+      type="hidden"
+      name="mauticform[formId]"
+      id="mauticform_websitenewslettersubscription_id"
+      value="4"
+    />
+    <input
+      type="hidden"
+      name="mauticform[return]"
+      id="mauticform_websitenewslettersubscription_return"
+      value={window.location.origin + window.location.pathname}
+    />
+    <input
+      type="hidden"
+      name="mauticform[formName]"
+      id="mauticform_websitenewslettersubscription_name"
+      value="websitenewslettersubscription"
+    />
+
+    {/* Checkboxes */}
+    <input type="hidden" name="mauticform[gdpr_accepted]" value="1" />
+    <input
+      type="hidden"
+      name="mauticform[i_consent_to_gathering_an]"
+      value="1"
+    />
+  </form>
+);
+
 export const App = () => {
+  useMauticSdk();
+
   return (
     <>
       <Content>
@@ -183,14 +253,7 @@ export const App = () => {
             <p class="text-xl md:text-2xl pt-2">
               Receive news and updates to your email.
             </p>
-            <div class="pt-8 md:flex md:gap-4">
-              <input
-                class="md:grow px-3 text-2xl w-full md:w-auto p-3.5"
-                placeholder="Add your email here…"
-                style={{ color: "#b6b6b6" }}
-              />
-              <button class="negative mt-2 md:mt-0">Subscribe</button>
-            </div>
+            <Newsletter />
             <p class="pt-4 md:pt-8 text-lg" style={{ color: "#787878" }}>
               By clicking on Subscribe you consent to usage of your given e-mail
               address for receiving communication and news about the Swarm
