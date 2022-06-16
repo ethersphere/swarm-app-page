@@ -1,5 +1,13 @@
+// Assets
 import logo from "./assets/logo.svg";
 import logoNegative from "./assets/logo-negative.svg";
+
+import feature01 from "./assets/features/01.svg";
+import feature02 from "./assets/features/02.svg";
+import feature03 from "./assets/features/03.svg";
+import feature04 from "./assets/features/04.svg";
+import feature05 from "./assets/features/05.svg";
+import feature06 from "./assets/features/06.svg";
 
 // Types
 import type { ComponentChildren } from "preact";
@@ -37,9 +45,8 @@ export const App = () => {
           <div class="mt-8 md:mt-0">
             <p class="text-xl md:text-2xl">
               Get the best out of Swarm by running a lightweight Swarm node on
-              on your own computer, giving you direct peer-to-peer
-              access to the network: no need to trust and rely on centralised
-              gateways.
+              on your own computer, giving you direct peer-to-peer access to the
+              network: no need to trust and rely on centralised gateways.
             </p>
             <p class="text-lg mt-4 md:mt-8">
               Bee Desktop starts a lightweight Swarm node service that runs in
@@ -60,7 +67,9 @@ export const App = () => {
           <h2 class="text-center">Why Swarm Desktop?</h2>
           <div class="features">
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature01} />
+              </div>
               <h3>Join Swarm with just 1 click</h3>
               <p>
                 Joining the Swarm network has never been easier, simply download
@@ -69,7 +78,9 @@ export const App = () => {
               </p>
             </div>
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature02} />
+              </div>
               <h3>Unlimited access</h3>
               <p>
                 Upload and share content without limitations on the Swarm
@@ -77,7 +88,9 @@ export const App = () => {
               </p>
             </div>
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature03} />
+              </div>
               <h3>Manage your data's persistence</h3>
               <p>
                 Swarm for Desktop makes it easy to buy and manage the stamps
@@ -85,7 +98,9 @@ export const App = () => {
               </p>
             </div>
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature04} />
+              </div>
               <h3>Easily host websites</h3>
               <p>
                 Upload your website to the unstoppable and censorship resistant
@@ -94,7 +109,9 @@ export const App = () => {
               </p>
             </div>
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature05} />
+              </div>
               <h3>Intuitively explore Swarm</h3>
               <p>
                 Swarm Desktop makes it simple for you to try and out and explore
@@ -103,7 +120,9 @@ export const App = () => {
               </p>
             </div>
             <div>
-              <Placeholder height={200} />
+              <div class="image">
+                <img src={feature06} />
+              </div>
               <h3>Upload and forget</h3>
               <p>
                 No need to keep your node running. Once you have uploaded your
