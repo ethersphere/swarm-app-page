@@ -222,30 +222,69 @@ export const App = () => {
           <div class="links">
             <div>
               <h5>Resources</h5>
-              <a href="#">Build with Swarm</a>
-              <a href="#">Earn with Swarm</a>
-              <a href="#">Swarm documentation</a>
-              <a href="#">Swarm white paper</a>
-              <a href="#">The Book of Swarm</a>
+              <a target="_blank" href="https://docs.ethswarm.org/docs/">
+                Bee documentation
+              </a>
+              <a
+                target="_blank"
+                href="https://www.ethswarm.org/swarm-whitepaper.pdf"
+              >
+                Swarm white paper
+              </a>
+              <a
+                target="_blank"
+                href="https://www.ethswarm.org/The-Book-of-Swarm.pdf"
+              >
+                The Book of Swarm
+              </a>
             </div>
             <div>
               <h5>Links</h5>
-              <a href="#">Swarm Desktop</a>
-              <a href="#">Swarm Gateway</a>
-              <a href="#">Github</a>
-              <a href="#">Blog</a>
-              <a href="#">Discord</a>
-              <a href="#">Twitter</a>
-              <a href="#">YouTube</a>
-              <a href="#">Reddit</a>
+              <a target="_blank" href="https://gateway.ethswarm.org/">
+                Swarm Gateway
+              </a>
+              <a target="_blank" href="https://github.com/ethersphere">
+                Github
+              </a>
+              <a target="_blank" href="https://medium.com/ethereum-swarm">
+                Blog
+              </a>
+              <a target="_blank" href="https://discord.gg/GU22h2utj6">
+                Discord
+              </a>
+              <a target="_blank" href="https://twitter.com/ethswarm">
+                Twitter
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/"
+              >
+                YouTube
+              </a>
+              <a target="_blank" href="https://www.reddit.com/r/EthSwarm/">
+                Reddit
+              </a>
             </div>
             <div>
               <h5>Company</h5>
-              <a href="#">Jobs</a>
-              <a href="#">Ecosystem &amp; grants</a>
-              <a href="#">Roadmap</a>
-              <a href="#">Privacy policy</a>
-              <a href="#">FAQs</a>
+              <a target="_blank" href="https://www.ethswarm.org/#section-jobs">
+                Jobs
+              </a>
+              <a target="_blank" href="https://www.ethswarm.org/ecosystem.html">
+                Ecosystem &amp; grants
+              </a>
+              <a target="_blank" href="https://progress.ethswarm.org/">
+                Roadmap
+              </a>
+              <a
+                target="_blank"
+                href="https://www.ethswarm.org/privacy-policy.html"
+              >
+                Privacy policy
+              </a>
+              <a target="_blank" href="https://www.ethswarm.org/faqs.html">
+                FAQs
+              </a>
             </div>
           </div>
           <div class="cta px-4 md:px-8 py-8 md:p-16 my-8 md:my-16">
