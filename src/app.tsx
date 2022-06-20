@@ -4,6 +4,7 @@ import { useMauticSdk } from "./hooks/use-mautic-sdk";
 // Assets
 import logo from "./assets/logo.svg";
 import logoNegative from "./assets/logo-negative.svg";
+import appPreview from "./assets/app-preview.png";
 
 import feature01 from "./assets/features/01.svg";
 import feature02 from "./assets/features/02.svg";
@@ -17,16 +18,6 @@ import { DownloadButtons } from "./components/download-button";
 
 // Types
 import type { ComponentChildren } from "preact";
-
-const Placeholder = ({ height }: { height: number }) => (
-  <div
-    style={{
-      width: "100%",
-      height: `${height}px`,
-      background: "#f5f5f5",
-    }}
-  />
-);
 
 const Content = ({ children }: { children: ComponentChildren }) => (
   <div class="max-w-screen-2xl m-auto px-8 md:px-16">{children}</div>
@@ -113,9 +104,9 @@ export const App = () => {
             get completely decentralised access to the Swarm network.
           </p>
         </header>
-        <section class="mt-8 md:mt-16 md:grid md:grid-cols-2 md:gap-8">
-          <Placeholder height={430} />
-          <div class="mt-8 md:mt-0">
+        <section class="mt-8 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <img src={appPreview} style={{ height: "430px" }} />
+          <div class="mt-8 lg:mt-0">
             <p class="text-xl md:text-2xl">
               Get the best out of Swarm by running a lightweight Swarm node on
               on your own computer, giving you direct peer-to-peer access to the
