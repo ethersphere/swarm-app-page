@@ -100,8 +100,9 @@ export const App = () => {
         <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Swarm Desktop offers an easy-to-use experience, enabling everyone to
-            get completely decentralised access to the Swarm network.
+            Swarm Desktop (Beta) offers an easy-to-use experience, enabling
+            everyone to get completely decentralised access to the Swarm
+            network.
           </p>
         </header>
         <section class="mt-8 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -125,7 +126,7 @@ export const App = () => {
         </section>
         <div class="line mt-16 md:mt-32" />
         <section class="mt-8 md:mt-16">
-          <h2 class="text-center">Why Swarm Desktop?</h2>
+          <h2 class="text-center">Why Swarm Desktop (Beta)?</h2>
           <div class="features">
             <div>
               <div class="image">
@@ -134,8 +135,8 @@ export const App = () => {
               <h3>Join Swarm with just 1 click</h3>
               <p>
                 Joining the Swarm network has never been easier, simply download
-                and install Swarm Desktop to get a lightweight Bee node running
-                on your computer.
+                and install Swarm Desktop (Beta) to get a lightweight Bee node
+                running on your computer.
               </p>
             </div>
             <div>
@@ -175,9 +176,9 @@ export const App = () => {
               </div>
               <h3>Intuitively explore Swarm</h3>
               <p>
-                Swarm Desktop makes it simple for you to try and out and explore
-                the functionality of the Swarm network. Easily your Swarm
-                light-node's status, settings and wallet.
+                Swarm Desktop (Beta) makes it simple for you to try and out and
+                explore the functionality of the Swarm network. Easily your
+                Swarm light-node's status, settings and wallet.
               </p>
             </div>
             <div>
