@@ -105,7 +105,7 @@ export const App = () => {
           </p>
         </header>
         <section class="mt-8 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <img src={appPreview} style={{ height: "430px" }} />
+          <img src={appPreview} />
           <div class="mt-8 lg:mt-0">
             <p class="text-xl md:text-2xl">
               Get the best out of Swarm by running a lightweight Swarm node on
