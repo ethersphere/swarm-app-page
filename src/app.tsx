@@ -100,24 +100,23 @@ export const App = () => {
         <header class="text-center mt-16 md:mt-32">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl md:text-4xl">
-            Swarm Desktop (Beta) offers an easy-to-use experience, enabling
-            everyone to get completely decentralised access to the Swarm
-            network.
+            Swarm Desktop (Beta) offers an easy-to-use experience to gain
+            decentralised access to the Swarm network.
           </p>
         </header>
         <section class="mt-8 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8">
           <img src={appPreview} />
           <div class="mt-8 lg:mt-0">
             <p class="text-xl md:text-2xl">
-              Get the best out of Swarm by running a lightweight Swarm node on
-              on your own computer, giving you direct peer-to-peer access to the
-              network: no need to trust and rely on centralised gateways.
+              Run a lightweight Swarm node on your own computer, and you'll have
+              direct peer-to-peer access to the network. You won't need to trust
+              and rely on centralised gateways.
             </p>
             <p class="text-lg mt-4 md:mt-8">
-              Bee Desktop starts a lightweight Swarm node service that runs in
-              the background on your computer. Use your favourite web browser to
-              manage your node, browse websites and upload and download data
-              directly from other peers in the Swarm network.
+              Swarm Desktop (Beta) starts a lightweight Swarm node service that
+              runs in the background on your computer. Use your favourite web
+              browser to manage your node, browse websites and upload and
+              download data directly from other peers in the Swarm network.
             </p>
             <div class="mt-4 md:mt-8">
               <DownloadButtons repo="ethersphere/bee-desktop" />
@@ -155,8 +154,8 @@ export const App = () => {
               </div>
               <h3>Manage your data's persistence</h3>
               <p>
-                Swarm for Desktop makes it easy to buy and manage the stamps
-                that will keep your content alive in the swarm network.
+                Swarm Desktop (Beta) makes it easy to buy and manage the stamps
+                that will keep your content alive in the Swarm network.
               </p>
             </div>
             <div>
@@ -176,9 +175,9 @@ export const App = () => {
               </div>
               <h3>Intuitively explore Swarm</h3>
               <p>
-                Swarm Desktop (Beta) makes it simple for you to try and out and
-                explore the functionality of the Swarm network. Easily your
-                Swarm light-node's status, settings and wallet.
+                Swarm Desktop (Beta) makes it simple for you to try out and
+                explore the functionality of the Swarm network. Easily check
+                your Swarm light-node's status, settings and wallet.
               </p>
             </div>
             <div>
@@ -188,7 +187,7 @@ export const App = () => {
               <h3>Upload and forget</h3>
               <p>
                 No need to keep your node running. Once you have uploaded your
-                content to Swarm, it will be automatically be kept alive by a
+                content to Swarm, it will automatically be kept alive by a
                 worldwide network of peers.
               </p>
             </div>
