@@ -12,6 +12,9 @@ import feature04 from "./assets/features/04.svg";
 import feature05 from "./assets/features/05.svg";
 import feature06 from "./assets/features/06.svg";
 
+// Components
+import { DownloadButtons } from "./components/download-button";
+
 // Types
 import type { ComponentChildren } from "preact";
 
@@ -125,10 +128,7 @@ export const App = () => {
               directly from other peers in the Swarm network.
             </p>
             <div class="mt-4 md:mt-8">
-              <button class="primary w-full md:w-auto">Download</button>
-              <button class="secondary mt-4 md:mt-0 md:ml-4 w-full md:w-auto">
-                GitHub Page
-              </button>
+              <DownloadButtons repo="ethersphere/bee-desktop" />
             </div>
           </div>
         </section>

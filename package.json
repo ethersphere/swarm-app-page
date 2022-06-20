@@ -8,7 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.5.15"
+    "preact": "^10.5.15",
+    "react-device-detect": "^2.2.2"
   },
   "devDependencies": {
     "@fontsource/ia-writer-quattro": "^4.5.3",
