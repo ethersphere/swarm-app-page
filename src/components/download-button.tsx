@@ -30,7 +30,10 @@ const findAsset = (
   for (const asset of assets) {
     switch (platform) {
       case "Windows":
-        if (asset.content_type === "application/x-msdos-program") {
+        if (
+          asset.content_type === "application/x-msdos-program" &&
+          asset.name.endsWith(".exe")
+        ) {
           return asset;
         }
         break;
@@ -50,14 +53,15 @@ type DownloadButtonProps = {
 };
 
 export const DownloadButton = ({ platform, repo }: DownloadButtonProps) => {
+  const assets = useGithubAssets(repo);
   const asset = useMemo(
-    () => findAsset(useGithubAssets(repo), platform),
-    [repo, platform]
+    () => findAsset(assets, platform),
+    [repo, platform, assets]
   );
   const { name, logo } = PLATFORMS[platform];
 
   const classes =
-    "primary w-full md:w-auto block flex items-center gap-3 text-sm mb-2";
+    "primary w-full md:w-max block flex items-center gap-3 text-sm mb-2 button";
   const children = (
     <>
       <img src={logo} />

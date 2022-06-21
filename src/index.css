@@ -103,21 +103,21 @@ footer {
   }
 }
 
-button {
+:is(button, .button) {
   @apply p-4;
   @apply text-lg;
   @apply uppercase;
   letter-spacing: 1px;
-}
 
-button.secondary {
-  border: solid 1px #000;
-  color: black;
-}
+  &.secondary {
+    border: solid 1px #000;
+    color: black;
+  }
 
-button.primary {
-  background: black;
-  color: white;
+  &.primary {
+    background: black;
+    color: white;
+  }
 }
 
 .cta {
