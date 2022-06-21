@@ -16,6 +16,12 @@ jobs:
       - run: npm i
       - run: npm run build
 
+      - uses: JamesIves/github-pages-deploy-action@4.3.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: dist
+
       - uses: ethersphere/swarm-actions/upload-dir@v0
         id: upload
         with:
