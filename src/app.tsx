@@ -97,7 +97,7 @@ export const App = () => {
         <nav class="mt-8 md:mt-16">
           <img src={logo} class="m-auto" />
         </nav>
-        <header class="text-center mt-16 md:mt-32">
+        <header class="text-center mt-8 md:mt-16">
           <h1>Swarm, for everyone.</h1>
           <p class="mt-8 text-2xl md:text-4xl">
             Swarm Desktop (Beta) offers an easy-to-use experience to gain
