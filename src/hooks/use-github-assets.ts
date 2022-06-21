@@ -12,7 +12,7 @@ export type Asset = {
 };
 
 const API = "https://api.github.com/repos/";
-const CACHE_VALIDITY = 24 * 60 * 60 * 1000;
+const CACHE_VALIDITY = 60 * 60 * 1000;
 
 const getLastRelease = async (repo: string) => {
   const request = await fetch(API + repo + "/releases/latest");
