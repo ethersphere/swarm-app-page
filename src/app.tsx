@@ -199,9 +199,9 @@ export const App = () => {
           <p class="mt-8 text-2xl md:text-4xl">
             Get up and running in just a few clicks.
           </p>
-          <button class="primary mt-8 w-full md:w-auto">
-            Download the app
-          </button>
+          <div class="mt-8">
+            <DownloadButtons repo="ethersphere/bee-desktop" line />
+          </div>
         </section>
       </Content>
       <footer class="bg-black py-8 md:py-16 text-center">

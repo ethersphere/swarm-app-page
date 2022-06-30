@@ -1,5 +1,6 @@
 import { osName } from "react-device-detect";
 import { useMemo } from "preact/hooks";
+import cn from "classnames";
 
 // Assets
 import windowsLogo from "../assets/platforms/windows.svg";
@@ -61,7 +62,7 @@ export const DownloadButton = ({ platform, repo }: DownloadButtonProps) => {
   const { name, logo } = PLATFORMS[platform];
 
   const classes =
-    "primary w-full md:w-max block flex items-center gap-3 text-sm mb-2 button";
+    "primary w-full md:w-max flex items-center gap-3 text-sm mb-2 button";
   const children = (
     <>
       <img src={logo} />
@@ -86,14 +87,17 @@ export const DownloadButton = ({ platform, repo }: DownloadButtonProps) => {
 
 type DownloadButtonsProps = {
   repo: string;
+  line?: boolean;
 };
 
-export const DownloadButtons = ({ repo }: DownloadButtonsProps) => {
+export const DownloadButtons = ({ repo, line }: DownloadButtonsProps) => {
   const platform = osName as keyof typeof PLATFORMS;
   if (PLATFORMS[platform]) {
     return (
       <>
-        <DownloadButton repo={repo} platform={platform} />
+        <div class={cn(line && "flex justify-center")}>
+          <DownloadButton repo={repo} platform={platform} />
+        </div>
 
         <div class="text-sm mt-4" style={{ color: "#6c6c6c" }}>
           <p class="italic">
@@ -112,8 +116,14 @@ export const DownloadButtons = ({ repo }: DownloadButtonsProps) => {
 
   return (
     <>
-      <DownloadButton repo={repo} platform="Windows" />
-      <DownloadButton repo={repo} platform="Mac OS" />
+      <div
+        class={cn(
+          line && "flex flex-col md:flex-row justify-center gap-0 md:gap-4"
+        )}
+      >
+        <DownloadButton repo={repo} platform="Windows" />
+        <DownloadButton repo={repo} platform="Mac OS" />
+      </div>
       <a
         href="https://github.com/ethersphere/bee-desktop/releases"
         class="text-sm underline mt-4 block"
