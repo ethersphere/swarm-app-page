@@ -40,7 +40,10 @@ const findAsset = (
         break;
 
       case "Mac OS":
-        if (asset.name.includes("-darwin-")) {
+        if (
+          asset.content_type === "application/x-apple-diskimage" &&
+          asset.name.endsWith("-x64.dmg")
+        ) {
           return asset;
         }
         break;
