@@ -118,6 +118,18 @@ export const App = () => {
               browser to manage your node, browse websites and upload and
               download data directly from other peers in the Swarm network.
             </p>
+            <p class="text-lg mt-2 md:mt-4">
+              Swarm Desktop is in Beta and currently includes the{" "}
+              <a
+                href="https://sentry.io/welcome/"
+                class="underline"
+                target="_blank"
+              >
+                Sentry
+              </a>{" "}
+              application monitoring and bug reporting software which
+              automatically collects data in order to help improve the software.
+            </p>
             <div class="mt-4 md:mt-8">
               <DownloadButtons repo="ethersphere/bee-desktop" />
             </div>
